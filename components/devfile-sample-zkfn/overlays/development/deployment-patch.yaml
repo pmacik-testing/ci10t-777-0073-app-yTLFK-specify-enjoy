@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-zkfn
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/ci10t-777-0073-tenant/ci10t-777-0073-app/devfile-sample-zkfn@sha256:572c1400bec17c47838d258e66cc2e74a3ed89a48c1e5cc9750a36c9b5ae6f68
+        name: my-nodejs
+        resources: {}
+status: {}
